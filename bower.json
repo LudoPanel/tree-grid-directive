@@ -20,7 +20,7 @@
   "homepage": "https://github.com/LudoPanel/tree-grid-directive-LP",
   "repository": {
     "type": "git",
-    "url": "https://github.com/LudoPanel/tree-grid-directive.git"
+    "url": "git://github.com/LudoPanel/tree-grid-directive"
   },
   "ignore": [
     "temp",
