@@ -20,7 +20,7 @@
   "homepage": "https://github.com/LudoPanel/tree-grid-directive-LP",
   "repository": {
     "type": "git",
-    "url": "git://github.com/LudoPanel/tree-grid-directive"
+    "url": "git://github.com/LudoPanel/angular-boostrap-grid-tree-LP"
   },
   "ignore": [
     "temp",
