@@ -134,8 +134,8 @@
 
                         getExpandingProperty();
                         
-                        scope.$watch('colDefs', {
-                              if (!attrs.colDefs) {
+                        scope.$watch('colDefs', function() {
+                            if(!attrs.colDefs) {
                                 if (scope.treeData.length) {
                                     var _col_defs = [],
                                         _firstRow = scope.treeData[0],
@@ -149,7 +149,8 @@
                                     }
                                     scope.colDefinitions = _col_defs;
                                 }
-                            } else {
+                            }
+                            else {
                                 scope.colDefinitions = scope.colDefs;
                             }
                         });
