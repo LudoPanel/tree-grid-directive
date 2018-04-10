@@ -133,6 +133,26 @@
                         };
 
                         getExpandingProperty();
+                        
+                        scope.$watch('colDefs', {
+                              if (!attrs.colDefs) {
+                                if (scope.treeData.length) {
+                                    var _col_defs = [],
+                                        _firstRow = scope.treeData[0],
+                                        _unwantedColumn = ['children', 'level', 'expanded', 'icons', expandingProperty];
+                                    for (var idx in _firstRow) {
+                                        if (_unwantedColumn.indexOf(idx) === -1) {
+                                            _col_defs.push({
+                                                field: idx
+                                            });
+                                        }
+                                    }
+                                    scope.colDefinitions = _col_defs;
+                                }
+                            } else {
+                                scope.colDefinitions = scope.colDefs;
+                            }
+                        });
 
                         if (!attrs.colDefs) {
                             if (scope.treeData.length) {
