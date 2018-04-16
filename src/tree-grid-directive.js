@@ -82,6 +82,7 @@
                     replace: true,
                     scope: {
                         treeData: '=',
+                        total: '=',
                         colDefs: '=',
                         expandOn: '=',
                         onSelect: '&',
